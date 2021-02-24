@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  //- h1= title
+  //- p Welcome to #{jsonData}
+  
+  table(style='width:100%', border='1')
+    thead 
+      tr 
+        th Id
+        th User Id
+        th Name
+        
+        th Title
+        th Body
+    tbody
+      each json in jsonData
+        
+          tr 
+            td=json.id
+            td=json.userId
+            td=json.name
+            
+            td=json.title 
+            td=json.body
